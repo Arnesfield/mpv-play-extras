@@ -1,2 +1,2 @@
-require('lib/autoplay')
-require('lib/toggle')
+require("lib/autoplay")
+require("lib/toggle")
