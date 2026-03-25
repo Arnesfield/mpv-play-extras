@@ -1,4 +1,4 @@
-local function toggle()
+mp.register_script_message("play-extras/toggle", function()
   -- if end of file, play from beginning
   -- otherwise, fallback to default behavior
   if mp.get_property("eof-reached") == "yes" then
@@ -7,6 +7,4 @@ local function toggle()
   else
     mp.command("cycle pause")
   end
-end
-
-mp.register_script_message("play-extras/toggle", toggle)
+end)
